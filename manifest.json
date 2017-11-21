@@ -1,0 +1,25 @@
+{
+  "name": "Gerador de CPF e CNPJ",
+  "description": "Gerador de números válidos para testes",
+  "version": "1.0.1",
+  "author": "Hudson Miyajima",
+  "permissions": [
+    "browsingData",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "browser_action": {
+    "default_popup": "base.html",
+    "default_icon": {
+      "16": "images/icon.png"
+    }
+  },
+  "background": {
+    "scripts": [
+      "script.js"
+    ],
+    "persistent": false
+  },
+  "options_page": "base.html",
+  "manifest_version": 2
+}

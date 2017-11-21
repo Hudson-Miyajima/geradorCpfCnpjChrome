@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Gerador de CPF e CNPJ Válidos</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="documentoFactory.js"></script>
+</head>
+<body>
+<div id="conteudo">
+    <div name="formulario">
+        <div id="resultado" class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-btn btn-custon">
+                        <button id="cpf" type="submit" class="btn btn-default">CPF
+                        </button>
+                        <button id="cnpj" type="submit" class="btn btn-default">CNPJ
+                        </button>
+                    </div>
+                    <input type="text"  class="input-custom" id="numero" size="16">
+                    <span class="input-group-addon">
+                        <div class="label-custon">Formatação</div>
+                        <input type="checkbox" id="formatacao" checked="checked">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div role="alert" id="msg">
+        </div>
+    </div>
+</div>
+</body>
+</html>
