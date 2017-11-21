@@ -5,8 +5,9 @@
  */
 
 body {
-    margin: 5px 10px 10px;
+    margin: 2px 2px 2px 2px;
 }
+
 .input-custom {
     display: block;
     padding: 6px 6px;
@@ -15,10 +16,12 @@ body {
     outline: none;
     text-align: center;
 }
-.label{
-    display:block;
+
+.label {
+    display: block;
 }
-.label-custom{
+
+.label-custom {
     font-size: 7px;
     font-weight: bold;
 }
@@ -37,7 +40,9 @@ body {
     text-decoration: none;
 }
 
-.btn:hover {
+body,
+.btn:hover,
+.input-group-addon {
     background: #3cb0fd;
     background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
     background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
