@@ -14,29 +14,19 @@ PopupController.prototype = {
         this.cnpj_button.addEventListener('click', this.geraNumeroDocumentoCnpj.bind(this));
     },
     geraNumeroDocumentoCpf: function () {
-        //var formatacao = this.formatacao_checkbox.checked;
-
         this.numero_field.value = geraCpf(this.formatacao_checkbox.checked);
-
         this.copiaParaAreaDeTransferencia();
-
     },
     geraNumeroDocumentoCnpj: function () {
-        //var formatacao = this.formatacao_checkbox.checked;
-
         this.numero_field.value = geraCnpj(this.formatacao_checkbox.checked);
-
         this.copiaParaAreaDeTransferencia();
-
     },
     copiaParaAreaDeTransferencia: function () {
-
         this.numero_field.select();
         document.execCommand('copy');
         this.mensagem.textContent = 'Copiado para área de transferência';
         this.mensagem.setAttribute('class', 'label label-primary');
     }
-
 };
 
 document.addEventListener('DOMContentLoaded', function () {
