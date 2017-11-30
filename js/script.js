@@ -12,7 +12,6 @@ PopupController.prototype = {
     init: function () {
         chrome.storage.sync.get("value", function (item) {
             if (!chrome.runtime.error) {
-                console.log(item.value);
                 if (item.value !== undefined) {
                     document.getElementById("numero").value = item.value;
                 }
