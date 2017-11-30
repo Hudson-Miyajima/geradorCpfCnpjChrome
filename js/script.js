@@ -4,7 +4,6 @@ var PopupController = function () {
     this.cnpj_button = document.getElementById('cnpj');
     this.numero_field = document.getElementById('numero');
     this.mensagem = document.getElementById('msg');
-    this.teste = '';
     this.init();
     this.addListeners_();
 };
