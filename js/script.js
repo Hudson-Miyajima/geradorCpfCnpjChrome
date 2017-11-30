@@ -26,13 +26,11 @@ PopupController.prototype = {
     },
     geraNumeroDocumentoCpf: function () {
         this.numero_field.value = geraCpf(this.formatacao_checkbox.checked);
-<<<<<<< Updated upstream
         this.copiaParaAreaDeTransferencia();
     },
     geraNumeroDocumentoCnpj: function () {
         this.numero_field.value = geraCnpj(this.formatacao_checkbox.checked);
         this.copiaParaAreaDeTransferencia();
-=======
         this.copiaParaAreaDeTransferencia(this.numero_field.value);
         this.copiaParaMemoria(this.numero_field.value);
     },
@@ -40,7 +38,6 @@ PopupController.prototype = {
         this.numero_field.value = geraCnpj(this.formatacao_checkbox.checked);
         this.copiaParaAreaDeTransferencia(this.numero_field.value);
         this.copiaParaMemoria(this.numero_field.value);
->>>>>>> Stashed changes
     },
     copiaParaAreaDeTransferencia: function () {
         this.numero_field.select();
