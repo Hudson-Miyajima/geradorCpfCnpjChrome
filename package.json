@@ -1,0 +1,23 @@
+{
+  "name": "geradorcpfcnpjchrome",
+  "version": "1.0.0",
+  "description": "geradorCpfCnpjChrome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hudson-Miyajima/geradorCpfCnpjChrome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hudson-Miyajima/geradorCpfCnpjChrome/issues"
+  },
+  "homepage": "https://github.com/Hudson-Miyajima/geradorCpfCnpjChrome#readme",
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-google": "^0.9.1"
+  }
+}

@@ -17,7 +17,7 @@
   },
   "background": {
     "scripts": [
-      "js/script.js",
+      "js/index.js",
       "js/documentoFactory.js"
     ],
     "persistent": false
