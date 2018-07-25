@@ -19,7 +19,6 @@ PopupController.prototype = {
         this.numero_field.value = geraCpf(this.formatacao_checkbox.checked);
 
         this.copiaParaAreaDeTransferencia();
-
     },
     geraNumeroDocumentoCnpj: function () {
         //var formatacao = this.formatacao_checkbox.checked;
@@ -27,10 +26,8 @@ PopupController.prototype = {
         this.numero_field.value = geraCnpj(this.formatacao_checkbox.checked);
 
         this.copiaParaAreaDeTransferencia();
-
     },
     copiaParaAreaDeTransferencia: function () {
-
         this.numero_field.select();
         document.execCommand('copy');
         this.mensagem.textContent = 'Copiado para área de transferência';
