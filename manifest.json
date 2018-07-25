@@ -6,7 +6,8 @@
   "permissions": [
     "browsingData",
     "clipboardWrite",
-    "clipboardRead"
+    "clipboardRead",
+    "storage"
   ],
   "browser_action": {
     "default_popup": "base.html",
@@ -16,7 +17,8 @@
   },
   "background": {
     "scripts": [
-      "js/script.js"
+      "js/script.js",
+      "js/documentoFactory.js"
     ],
     "persistent": false
   },
