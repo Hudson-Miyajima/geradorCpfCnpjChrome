@@ -1,12 +1,12 @@
-randomiza = function() {
+var randomiza = function() {
   return Math.round(Math.random() * 9);
 };
 
-mod = function(dividendo, divisor) {
+var mod = function(dividendo, divisor) {
   return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
 };
 
-Numero = function(cpf) {
+var Numero = function(cpf) {
   return {
     n1: randomiza(),
     n2: randomiza(),
@@ -19,10 +19,11 @@ Numero = function(cpf) {
     n9: cpf === true ? randomiza() : 0,
     n10: 0,
     n11: 0,
-    n12: 1,
+    n12: 1
   };
 };
-geraCpf = function(comPonto) {
+
+var geraCpf = function(comPonto) {
   var numero_ = new Numero(true);
 
   var d1 =
@@ -41,6 +42,7 @@ geraCpf = function(comPonto) {
   if (d1 >= 10) {
     d1 = 0;
   }
+
   var d2 =
       d1 * 2 +
       numero_.n9 * 3 +
@@ -65,11 +67,11 @@ geraCpf = function(comPonto) {
     '-' + d1 + d2,
     semPonto: '' + numero_.n1 + numero_.n2 + numero_.n3 + numero_.n4 +
     numero_.n5 +
-    numero_.n6 + numero_.n7 + numero_.n8 + numero_.n9 + d1 + d2,
+    numero_.n6 + numero_.n7 + numero_.n8 + numero_.n9 + d1 + d2
   };
 };
 
-geraCnpj = function(comPonto) {
+var geraCnpj = function(comPonto) {
   var numero_ = new Numero(false);
   console.log(numero_.n9);
 
@@ -113,6 +115,7 @@ geraCnpj = function(comPonto) {
   if (d2 >= 10) {
     d2 = 0;
   }
+
   return {
     comPonto: '' + numero_.n1 + numero_.n2 +
     '.' + numero_.n3 + numero_.n4 + numero_.n5 +
@@ -122,7 +125,6 @@ geraCnpj = function(comPonto) {
     semPonto: '' + numero_.n1 + numero_.n2 + numero_.n3 + numero_.n4 +
     numero_.n5 + numero_.n6 + numero_.n7 + numero_.n8 + numero_.n9 +
     numero_.n10 + numero_.n11 +
-    numero_.n12 + d1 + d2,
+    numero_.n12 + d1 + d2
   };
 };
-
