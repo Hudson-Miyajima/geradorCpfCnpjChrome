@@ -23,7 +23,7 @@ Numero = function(cpf) {
   };
 };
 
-geraCpf = function(comPonto) {
+geraCpf = function() {
   var numero_ = new Numero(true);
 
   var d1 =
@@ -71,7 +71,7 @@ geraCpf = function(comPonto) {
   };
 };
 
-geraCnpj = function(comPonto) {
+geraCnpj = function() {
   var numero_ = new Numero(false);
   console.log(numero_.n9);
 
