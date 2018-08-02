@@ -1,4 +1,4 @@
-var PopupController = function() {
+PopupController = function() {
   this.format_check = document.getElementById('format');
   this.cpf_button = document.getElementById('cpf');
   this.cnpj_button = document.getElementById('cnpj');

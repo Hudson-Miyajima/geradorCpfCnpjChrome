@@ -1,12 +1,12 @@
-var randomiza = function() {
+randomiza = function() {
   return Math.round(Math.random() * 9);
 };
 
-var mod = function(dividendo, divisor) {
+mod = function(dividendo, divisor) {
   return Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
 };
 
-var Numero = function(cpf) {
+Numero = function(cpf) {
   return {
     n1: randomiza(),
     n2: randomiza(),
@@ -23,7 +23,7 @@ var Numero = function(cpf) {
   };
 };
 
-var geraCpf = function(comPonto) {
+geraCpf = function(comPonto) {
   var numero_ = new Numero(true);
 
   var d1 =
@@ -71,7 +71,7 @@ var geraCpf = function(comPonto) {
   };
 };
 
-var geraCnpj = function(comPonto) {
+geraCnpj = function(comPonto) {
   var numero_ = new Numero(false);
   console.log(numero_.n9);
 
@@ -110,7 +110,7 @@ var geraCnpj = function(comPonto) {
       numero_.n2 * 5 +
       numero_.n1 * 6;
 
-  d2 = 11 - ( this.mod(d2, 11) );
+  d2 = 11 - (this.mod(d2, 11));
 
   if (d2 >= 10) {
     d2 = 0;
