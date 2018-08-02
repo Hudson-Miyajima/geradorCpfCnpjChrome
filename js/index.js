@@ -48,7 +48,7 @@ PopupController.prototype = {
         console.log('Runtime error.');
       }
     });
-  },
+  }
 };
 
 document.addEventListener('DOMContentLoaded', function() {
