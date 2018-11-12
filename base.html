@@ -6,6 +6,7 @@
     <link href="css/popup.css" rel="stylesheet">
     <script src="js/index.js"></script>
     <script src="js/documentoFactory.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="conteudo">
@@ -19,8 +20,11 @@
                     </div>
                     <input type="text" class="input-custom" id="numero" size="16">
                     <span class="input-group-addon">
-                        <label class="label-custom" for="format">Formatação</label>
-                        <input type="checkbox" id="format" checked="checked"/>
+                        <div class="label-custom" for="format">Formatação</div>
+                        <label class="switch">
+                            <input type="checkbox" id="format" checked="checked"/>
+                              <span class="slider round"></span>
+                        </label>
                     </span>
                 </div>
             </div>
